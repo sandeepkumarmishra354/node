@@ -1,0 +1,7 @@
+#container { max-width: inherit; height: 400px; margin: 2px; background-color: #3e1f47; overflow: auto;                               position: relative; text-align: left; color: white; }
+#option_box { max-width: inherit; height: 40px; position: sticky; top: 350px; bottom:0;right: 0; left: 0; padding: 5px; background-color: #3d3050; }
+#msg { padding: 5px; background: transparent; border: 1px solid grey; max-width: 300px; color: black; }
+#msg:focus { background-color: #3e1f47; color: white; }
+#send { padding: 5px; border: none; }
+#send:hover { cursor: pointer; background-color: #3e1f47; color: white; }
+.sent_msg { padding: 10px 0 10px 10px; border-radius: 30px; background-color: dodgerblue; color: white; }
