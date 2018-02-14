@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>web page</title>
+    <meta lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="style/homeScript.js"></script>
+    <link rel="stylesheet" href="style/home.css">
+    
+</head>
+
+<body>
+    <header>
+        <center>
+            <h2 title="home"><i> <span class="name">v</span>eeru <span class="name">s</span>andy<span id="dotcom">.com</span> </i></h2>
+        </center>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Home </a> </li>
+            <li> <a href="/style/home.css"> About </a> </li>
+            <li> <a href="#"> Contact </a> </li>
+        </ul>
+    </nav>
+    <div id="main_div">
+        <div id="login_div">
+            <form class="login_form" action="log_in" method="post">
+                <input class="login_signup_input" type="text" name="usrnme" placeholder="email">&nbsp;
+                <input class="login_signup_input" type="password" name="pswrd" placeholder="password"> <br><br>
+                <input type="submit" value="login" id="login_btn">
+            </form>
+        </div>
+        <div id="signup_div">
+            <h3><i> not a member ? </i></h3>
+            <button id="tmp_signup">signup</button>
+            <form class="signup_form" style="display: none" action="sign_up" method="post" enctype="multipart/form-data">
+                <input class="login_signup_input sgn" type="text" placeholder="First name" name="fname">&nbsp;
+                <input class="login_signup_input sgn" type="text" placeholder="Last name" name="lname"><br><br>
+                <input class="login_signup_input sgn" type="email" placeholder="Email" name="email">&nbsp;
+                <input class="login_signup_input sgn" type="number" placeholder="Phone No." name="phnno"><br><br>
+                <input class="login_signup_input" type="file" name="profile_pic"><br><br>
+                <input class="login_signup_input sgn" type="text" placeholder="choose password" name="pswrd1"><br><br>
+                <input class="login_signup_input sgn" type="text" placeholder="re-enter password" name="pswrd2"><br><br>
+                <input type="submit" value="signup" id="signup_btn" onclick="return check()">
+            </form>
+            <span id="tmp_login_btn" style="display: none">
+                <h3><i> Already a member ? </i></h3>
+                <button id="tmp_login">login</button>
+                </span>
+        </div>
+    </div>
+    <footer>
+        <i>veerusandy.com &copy; all right reserved</i><br>
+        <i>2017</i>
+    </footer>
+</body>
+
+</html>
