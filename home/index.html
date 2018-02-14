@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>web page</title>
+    <meta lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="style/home css js/jquery.js"></script>
+    <script src="style/home css js/homeScript.js"></script>
+    <link rel="stylesheet" href="style/home css js/home.css">
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script>
+        
+        var socket = io();
+        socket.on('from_server', function(msg) {
+            alert(msg);
+        });
+        var about = io('/about.html');
+        about.on('ab', function(data) {
+            alert(data);
+        });
+        
+    </script>
+</head>
+
+<body onload="set()">
+    <header>
+        <center>
+            <h2 title="home"><i> <span class="name">v</span>eeru <span class="name">s</span>andy<span id="dotcom">.com</span> </i></h2>
+        </center>
+    </header>
+    <nav>
+        <ul id="nav_ul">
+            <li id="l1"> <a class="nav_a" href="/"> Home </a> </li>
+            <li id="l2"> <a class="nav_a" href="/about.html"> About </a> </li>
+            <li id="l3"> <a class="nav_a" href="/contact.html"> Contact </a> </li>
+        </ul>
+    </nav>
+    <div id="main_div">
+        <div id="login_div">
+            <center>            
+                <form class="login_form" action="log_in" method="post">
+                    <input class="login_signup_input lgn" type="text" name="usrnme" placeholder="email">&nbsp;
+                    <input class="login_signup_input lgn" type="password" name="pswrd" placeholder="password"> <br><br>
+                    <input type="submit" value="login" id="login_btn" onclick="return check_login()">
+                </form>
+            </center>
+        </div>
+        <div id="signup_div">
+            <h3><i> not a member ? </i></h3>
+            <button id="tmp_signup">signup</button>
+            <form class="signup_form" style="display: none" action="sign_up" method="post" enctype="multipart/form-data">
+                <input class="login_signup_input sgn" type="text" placeholder="First name" name="fname">&nbsp;
+                <input class="login_signup_input sgn" type="text" placeholder="Last name" name="lname"><br><br>
+                <input class="login_signup_input sgn" type="email" placeholder="Email" name="email">&nbsp;
+                <input class="login_signup_input sgn" type="number" placeholder="Phone No." name="phnno"><br><br>
+                <i>upload a profile picture</i>
+                <input id="file" class="login_signup_input" type="file" name="profile_pic"><br><br>
+                <input class="login_signup_input sgn" type="text" placeholder="choose password" name="pswrd1"><br><br>
+                <input class="login_signup_input sgn" type="text" placeholder="re-enter password" name="pswrd2"><br><br>
+                <input type="submit" value="signup" id="signup_btn" onclick="return check_signup()">
+            </form>
+            <span id="tmp_login_btn" style="display: none">
+                <h3><i> Already a member ? </i></h3>
+                <button id="tmp_login">login</button>
+                </span>
+        </div>
+    </div>
+    <footer>
+        <i>veerusandy.com &copy; all right reserved</i><br>
+        <i>2017</i>
+    </footer>
+</body>
+
+</html>
