@@ -1,0 +1,22 @@
+header, footer { text-align: center; padding: 20px; background-color: #3e1f47; color: white; margin: 0 8px 0 8px; }
+header h2 { max-width: 250px; }
+header h2:hover { cursor: pointer; }
+.name { font-size: 55px; color: #ff4da6; }
+nav { padding: 15px; background-color: #2b222b; position: sticky; top: 0; margin: 0 8px 0 8px; }
+nav a { text-decoration: none; color: white; padding: 14px; }
+nav ul { list-style-type: none; display: inline; }
+li { float: left; }
+nav a:hover { background-color: #3e1f47; }
+#dotcom { font-size: 12px; }
+#login_div { text-align: center; padding: 9px; background-color: #d4c4d4; margin: 0 8px 0 8px; }
+#signup_div { text-align: center; padding: 15px; background-color: #d4c4d4; margin: 0 8px 0 8px; }
+#main_div { background-color: #d4c4d4; padding: 40px; margin: 10px; }
+#login_form { margin-top: 25px; }
+#signup_btn { border: none; padding: 10px; width: 100px; background-color: #003300; font-weight: bold; }
+#login_btn { border: none; padding: 10px; width: 100px; background-color: #003300; font-weight: bold; }
+#signup_btn:hover { color: white; background-color: #001a00; cursor: pointer; }
+#login_btn:hover { color: white; background-color: #001a00; cursor: pointer; }
+.login_signup_input { border: none; padding: 8px; background-color: white; color: black; max-width: 300px; }
+#tmp_signup, #tmp_login { border: none; padding: 10px; width: 100px; background-color: #003300; font-weight: bold; }
+#tmp_signup, #tmp_login:hover { color: white; background-color: #001a00; cursor: pointer; }
+#file { background-color: #d4c4d4; max-width: 200px; }
