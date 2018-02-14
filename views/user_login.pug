@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    title= userName
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/style/user_login.css")
+    link(rel="stylesheet" href="/style/public_chat.css")
+    script(src="/style/user_login.js")
+    script(src="style/home css js/jquery.js")
+  body
+    header
+      center
+        h2(title="home")
+          i
+            span.name v
+            span eeru
+            span.name s
+            span andy
+            span#dotcom .com
+    nav
+      ul
+        li
+          a(href="/about.html") About
+        li 
+          a(href="/contact.html") Contact
+    
+    section
+      center
+        article
+          center
+            img#profile(src=profile_pic alt="profile pic")
+            h3
+             i(style="color:#3e1f47")= fullName
+          nav#login_nav
+            ul#login_ul
+              li
+                a(href="#") who I'm
+              li
+                a(href="/") log out
+          br
+          br
+          br
+          h3#private(onclick="private_chat()") start private chat
+          div#private_box
+          h3#public(onclick="public_chat()") start public chat
+          div#public_box
+    footer
+      i veerusandy.com - all right reserved
+      br
+      i 2017
